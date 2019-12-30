@@ -17,8 +17,10 @@
     if (distance <= 0) {
       document.getElementById("dday-timer").innerHTML = "D-day";
     } else {
-      document.getElementById("dday-day").innerHTML = "D - "+d;
-      document.getElementById("dday-time").innerHTML = h + " : " + m + " : " + s;
+      document.getElementById("time-day").innerHTML = d;
+      document.getElementById("time-hour").innerHTML = h;
+      document.getElementById("time-minute").innerHTML = m;
+      document.getElementById("time-second").innerHTML = s;
     }
   }
 

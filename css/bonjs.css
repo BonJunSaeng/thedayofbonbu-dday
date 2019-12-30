@@ -1,0 +1,130 @@
+div.wrapBonday {min-width:320px; position:fixed; top:0; left:0; right:0; bottom:0; background-attachment:fixed; background-image:linear-gradient(50deg,#0808af,#1053fd)}
+div.tityArea {position: fixed; z-index: 100;  color:#fff; top:0; bottom:0; left:0; right:0;}
+div.titCopy {margin-top:5%; margin-left:5%;}
+div.titCopy h1 {font-size:130px !important; font-family:Montserrat, sans-serif;}
+div.titCopy .subTit {font-family: Montserrat; font-weight:300; font-size:46px !important;}
+span.subCopy {position:fixed; bottom:5%; left:5%;display:inline-block; font-family: Montserrat; font-weight:900; font-size:26px !important;}
+span.bonSymbol {z-index: 0;position:absolute;top: -170px;right: 5%;font-size: 1000px;font-weight: bold;color: #fff;font-family: 'Noto Sans', sans-serif;}
+span.curlySymbol {z-index: 10; position:absolute; width:330px; height:1000px; background:url(../img/symbol.svg)no-repeat 0 0; top: 5%;right: 5%;}
+/* button.btnJoin {padding:18px 80px; font-size:18px; color:#fff; background:transparent; border:1px solid #fff; margin-top:20px;} */
+
+
+
+button.btnJoin {
+  background: transparent;
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+  float: left;
+  margin-right: 2.5em;
+  cursor:pointer;
+  overflow: hidden;
+  padding: 18px 80px;
+  position: relative;
+  text-align: center;
+  border:1px solid #fff;
+  outline:none;
+}
+button.btnJoin:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 500%;
+  height: 1000%;
+  background: #fff;
+  z-index: -1;
+  transform-origin: 0% 0%;
+  transform: translateX(calc(20% - 25px)) translateY(10%) rotate(-45deg);
+  /transform: translateY(10%) translateX(16%) rotate(-45deg);
+  transition: transform .3s;
+}
+button.btnJoin:hover {color:#0b24cd; font-weight:600;}
+button.btnJoin:hover::after {
+  transform: translateY(10%) translateX(-25px) rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+.timerArea strong{font-family: Montserrat; font-weight:600; }
+.overlay {
+    background:transparent;l
+    z-index: 20;
+    width: 300px;
+    height: 300px;
+    border-top: solid 300px #ffffff00;
+    border-right: solid 300px #fed200;
+    border-left: solid 300px  #ffffff00;
+    border-bottom:solid 300px #fed200;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    opacity: 1;
+    top: auto;
+    left: auto;
+  }
+
+  .timerArea{font-family: 'Noto Sans', sans-serif;}
+  .timerArea strong{font-family: Montserrat;font-size: 46px;font-weight: 500 !important;}
+
+@media screen and (max-height: 730px) { 
+  div.titCopy h1 {font-size:90px !important;}
+  div.titCopy .subTit {font-size:38px !important;}
+  div.timerArea strong {font-size:38px;!important;}
+  span.subCopy {font-size:16px !important;}
+  div.overlay{
+    border-top: solid 150px #ffffff00;
+    border-right: solid 150px #fed200;
+    border-left: solid 150px  #ffffff00;
+    border-bottom:solid 150px #fed200;
+  }
+}
+
+@media screen and (max-height: 580px) { 
+  span.subCopy {display:none;}
+}
+
+@media screen and (max-width: 1094px) { 
+  span.curlySymbol {opacity:0.3; z-index:0;}
+}
+
+@media screen and (max-width: 1000px) {
+  div.overlay{
+    border-top: solid 150px #ffffff00;
+    border-right: solid 150px #fed200;
+    border-left: solid 150px  #ffffff00;
+    border-bottom:solid 150px #fed200;
+  }
+} 
+
+@media screen and (max-width: 768px) { 
+  div.titCopy h1 {font-size:90px !important;}
+  div.titCopy .subTit {font-size:38px !important;}
+  p.timerArea strong {font-size:38px;}
+}
+
+@media screen and (max-width: 495px) { 
+  div.titCopy h1 {font-size:50px !important; margin-top:50px;}
+  div.titCopy .subTit {font-size:22px !important;}
+  p.timerArea strong {font-size:24px !important}
+}
+
+
+
+
+
+
+
+
+
+
+
+
